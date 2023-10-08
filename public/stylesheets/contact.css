@@ -1,0 +1,453 @@
+/* name: namneet
+id: 301279374
+10/1/2023
+contact.css */
+body {
+	background: #000;
+	font-size:22px;
+	line-height: 32px;
+	color: #ffffff;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 30px;
+	padding: 0;
+	word-wrap:break-word !important;
+	font-family: sans-serif;
+	}
+h1 {
+	font-size: 60px;
+	text-align: center;
+	color: #FFF;
+}	
+h3 {
+	font-size: 30px;
+	line-height: 34px;
+	text-align: center;
+	color: #FFF;
+}
+h3 a {
+	color: #FFF;
+}
+a {
+	color: #FFF;
+}
+h1 {
+	margin-top: 100px;
+	text-align:center;
+	font-size:60px;
+	line-height: 70px;
+	font-family: 'Bree Serif', 'serif';
+}
+/*style for navigation bar*/
+nav {
+	padding-top: 0px;
+padding-bottom: 0 px;
+	margin-bottom: 0px;
+	background-color: rgb(0, 0, 0);
+}
+
+#logo {
+display: block;
+padding: 0 30px;
+float: left;
+font-size: 50px;
+line-height: 30px;
+}
+#logo img{
+width: 40%;
+}
+
+nav:after {
+content: "";
+display: table;
+clear: both;
+}
+
+nav ul {
+float: right;
+padding: 0;
+margin: 0;
+list-style: none;
+position: relative;
+}
+
+nav ul li {
+margin: 0px;
+display: inline-block;
+/* float: left; */
+background-color: #000000;
+}
+
+nav a {
+display: block;
+padding: 0 20px;
+color: rgb(227, 227, 227);;
+font-size: 20px;
+line-height: 60px;
+text-decoration: none;
+}
+
+nav ul li:hover { background: rgb(189, 96, 255);}
+nav a:hover { color: #000; }
+
+
+nav ul ul {
+display: none;
+position: absolute;
+top: 60px;
+}
+
+nav ul li:hover > ul { display: inherit; }
+
+nav ul ul li {
+width: 170px;
+float: none;
+display: list-item;
+position: relative;
+}
+
+nav ul ul ul li {
+position: relative;
+top: -60px;
+left: 170px;
+}
+
+li > a:after { content: ' +'; }
+.toggle, [id^=drop] {
+display: none;
+}
+li > a:only-child:after { content: ''; }
+
+/*Responsive Styles*/
+@media all and (max-width : 768px) {
+#logo {
+display: block;
+padding: 0;
+width: 100%;
+text-align: center;
+float: none;
+}
+
+nav { margin: 0; }
+.toggle + a,
+.menu { display: none; }
+.toggle {
+display: block;
+background-color: #254441;
+padding: 0 20px;
+color: #FFF;
+font-size: 20px;
+line-height: 60px;
+text-decoration: none;
+border: none;
+}
+
+.toggle:hover { background-color: #000000; }
+
+[id^=drop]:checked + ul { display: block; }
+
+nav ul li {
+display: block;
+width: 100%;
+}
+
+nav ul ul .toggle,
+
+nav ul ul a { padding: 0 40px; }
+
+nav ul ul ul a { padding: 0 80px; }
+
+nav a:hover,
+
+nav ul ul ul a { background-color: #000000; }
+
+nav ul li ul li .toggle,
+
+nav ul ul a { background-color: #212121; }
+
+nav ul ul {
+float: none;
+position: static;
+color: #ffffff;
+}
+
+nav ul ul li:hover > ul,
+
+nav ul li:hover > ul { display: none; }
+
+nav ul ul li {
+display: block;
+width: 100%;
+}
+
+nav ul ul ul li { 
+ position: static;
+}
+}
+
+@media all and (max-width : 330px) {
+nav ul li {
+display: block;
+width: 94%;
+}
+}
+
+
+/*style for contact form*/
+/* Style all select, textareas and input types except color, radio, checkbox */
+input:not([type=color]):not([type=radio]):not([type=checkbox]), select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+}
+label{
+	color: #000000;
+}
+/* Style textarea elements */
+textarea {
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/* increase the size of the select element to match others */
+select {
+  height: 4em;
+}
+/* add some space between the radio options*/
+input[type=radio] {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+/* Style the submit button with a specific background color etc */
+button[type=submit] {
+    background-color: #14b2cf;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* When moving the mouse over the submit button, add a darker color */
+button[type=submit]:hover {
+    background-color: #1091A9;
+}
+/* Style the reset button with a specific background color etc */
+button[type=reset] {
+    background-color: #ddd;
+    color: #cd4747;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* When moving the mouse over the submit button, add a darker color */
+button[type=reset]:hover {
+    background-color: #A72600;
+    color: white;
+}
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*footer styling*/
+footer{
+    position: fixed;
+    bottom: 0;
+  }
+  @media (max-height:800px){
+    footer { position: static; }
+    header { padding-top:40px; }
+  }
+  .footer-distributed{
+    background-color: #004d4d;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+  }
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* Footer left */
+  .footer-distributed .footer-left{
+    width: 30%;
+  }
+  .footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px sans-serif;
+    margin: 0;
+  }
+  /* The company logo */
+  .footer-distributed .footer-left img{
+    width: 30%;
+  }
+  .footer-distributed h3 span{
+    color:  #e0ac1c;
+  }
+  /* Footer links */
+  
+footer{
+  position: fixed;
+  bottom: 0;
+}
+@media (max-height:800px){
+  footer { position: static; }
+  header { padding-top:40px; }
+}
+.footer-distributed{
+  background-color: rgb(189, 96, 255);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 0px;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+/* Footer left */
+.footer-distributed .footer-left{
+  width: 30%;
+}
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px sans-serif;
+  margin: 0;
+}
+/* The company logo */
+.footer-distributed .footer-left img{
+  width: 30%;
+}
+.footer-distributed h3 span{
+  color:  #e0ac1c;
+}
+/* Footer links */
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+}
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+.footer-distributed .footer-links a:hover{
+  color: #000;
+}
+.footer-distributed .footer-company-name{
+  color:  #000000;
+  font: normal 18px / 25.2px sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+/* Footer Center */
+.footer-distributed .footer-center{
+  width: 35%;
+}
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font: normal 14px / 25.2px sans-serif;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 28px;
+}
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font: normal 14px / 25.2px sans-serif;
+  vertical-align: middle;
+  margin:0;
+}
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+.footer-distributed .footer-center p a{
+  color:  #fff;
+  text-decoration: none;;
+}
+.footer-distributed .footer-center p a:hover{
+  color: #000;
+}
+/* Footer Right */
+.footer-distributed .footer-right{
+  width: 30%;
+}
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #fff;
+  font: normal 14px / 25.2px sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #000000;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  text-decoration: none;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+@media (max-width: 880px) {
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+  
